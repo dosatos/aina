@@ -38,10 +38,10 @@ This document presents verified research findings and separates **VERIFIED FACTS
 - What will they pay for?
 
 ### What Personality Test Platforms DON'T Publish
-❌ **16Personalities:** No user demographics (despite 2B+ tests, 25M monthly visitors)
-❌ **CliftonStrengths (Gallup):** No user demographics (despite 36M+ users)
-❌ **MBTI Foundation:** No user demographics
-❌ **Truity, Crystal, others:** No demographic breakdowns
+- ❌ **16Personalities:** No user demographics (despite 2B+ tests, 25M monthly visitors)
+- ❌ **CliftonStrengths (Gallup):** No user demographics (despite 36M+ users)
+- ❌ **MBTI Foundation:** No user demographics
+- ❌ **Truity, Crystal, others:** No demographic breakdowns
 
 **Why?** Competitive intelligence, privacy laws, or data doesn't exist.
 
@@ -710,22 +710,22 @@ From analysis of 9,314 Trustpilot reviews + platform observation:
 
 ### LOW CONFIDENCE (Unverified Hypotheses)
 
-❌ Developers/PMs/consultants = primary users
-❌ Career changers use tests more than stable workers
-❌ Stack Overflow behaviors generalize to target persona
-❌ "Analytical professionals" = actual user base
-❌ Job title hypothesis matches reality
+- ❌ Developers/PMs/consultants = primary users
+- ❌ Career changers use tests more than stable workers
+- ❌ Stack Overflow behaviors generalize to target persona
+- ❌ "Analytical professionals" = actual user base
+- ❌ Job title hypothesis matches reality
 
 **Requires:** Phase 0 validation to confirm or refute.
 
 ### ZERO EVIDENCE (Pure Speculation)
 
-❌ Job title distribution of personality test users
-❌ Income distribution of test users
-❌ Gender split
-❌ Media consumption patterns
-❌ Specific pain points driving usage
-❌ Geographic distribution (B2C)
+- ❌ Job title distribution of personality test users
+- ❌ Income distribution of test users
+- ❌ Gender split
+- ❌ Media consumption patterns
+- ❌ Specific pain points driving usage
+- ❌ Geographic distribution (B2C)
 
 **Requires:** Primary research (surveys, interviews, analytics).
 
