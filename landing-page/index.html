@@ -216,7 +216,7 @@
         <div class="bg-dark-surface border border-dark-border p-6">
           <div class="text-neon-cyan font-bold text-lg mb-3 font-mono">01. Assessment</div>
           <p class="text-slate-300 text-sm leading-relaxed">
-            15 behavioral questions. No right answers. Just patterns.
+            10 diagnostic questions. No right answers. Just patterns.
           </p>
         </div>
 
@@ -239,25 +239,10 @@
       <div class="bg-dark-surface border border-dark-border p-8 md:p-10 mb-12 font-mono text-sm overflow-x-auto">
         <div class="text-slate-500 mb-4">// how_it_works.js</div>
         <pre class="text-slate-200 leading-relaxed"><span class="token-function">takeAssessment</span>()
-  <span class="token-comment">// 15 behavioral questions (10 minutes)</span>
-  <span class="token-comment">// No right answers. Just patterns.</span>
-
-  .<span class="token-function">then</span>(responses => <span class="token-function">analyzeBehavioralProfile</span>(responses))
-    <span class="token-comment">// Structure need: 0.78 (high)</span>
-    <span class="token-comment">// Pace preference: 0.45 (moderate)</span>
-    <span class="token-comment">// Social energy: 0.32 (low)</span>
-    <span class="token-comment">// Autonomy drive: 0.82 (high)</span>
-
-  .<span class="token-function">then</span>(profile => <span class="token-function">diagnoseMismatch</span>(profile, currentRole))
-    <span class="token-comment">// "High structure need in low-structure role"</span>
-    <span class="token-comment">// Mismatch score: 68%</span>
-
+  .<span class="token-function">then</span>(responses => <span class="token-function">analyzeProfile</span>(responses))
+  .<span class="token-function">then</span>(profile => <span class="token-function">diagnoseMismatch</span>(profile))
   .<span class="token-function">then</span>(diagnosis => {
-    <span class="token-keyword">return</span> {
-      <span class="token-string">why_stuck</span>: <span class="token-string">"Your nervous system is rejecting the mismatch"</span>,
-      <span class="token-string">root_cause</span>: <span class="token-string">"Not lack of options. Wrong fit."</span>,
-      <span class="token-string">next_step</span>: <span class="token-string">"Now you know WHY. Make next move with data."</span>
-    };
+    <span class="token-keyword">return</span> <span class="token-string">"Now you know WHY you're stuck."</span>
   });</pre>
       </div>
 
