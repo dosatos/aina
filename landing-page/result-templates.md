@@ -4,47 +4,35 @@
 
 ---
 
-## Scoring Logic
+## Scoring Logic (Updated for Binary Choices)
 
 ### Part 1: Behavioral Wiring Profile (Q1-Q3)
 
-**Q1: Assertiveness**
-- 4 = High ("Jump in and decide")
-- 3 = Moderate-high ("Suggest and gauge")
-- 2 = Low ("Support others")
-- 1 = Very low ("Wait to be asked")
+**Q1: Assertiveness (Binary)**
+- 2 = High ("Jump in and make decision")
+- 1 = Low ("Facilitate until group aligns")
 
-**Q2: Pace Preference**
-- 4 = Fast ("Make the call at 80%")
-- 3 = Moderate-fast ("Make it but feel uncomfortable")
-- 2 = Moderate-slow ("Keep researching to 90%+")
-- 1 = Slow/deliberate ("Struggle to stop researching")
+**Q2: Pace Preference (Binary)**
+- 2 = Fast ("Make the call at 80%")
+- 1 = Slow/deliberate ("Keep researching to 90%+")
 
-**Q3: Task vs People Orientation**
-- 4 = High task focus ("Reassign work")
-- 3 = Balanced ("Understand first, then decide")
-- 2 = High people focus ("Support and coach")
-- 1 = Conflict avoidant ("Hope they figure it out")
+**Q3: Task vs People Orientation (Binary)**
+- 2 = High task focus ("Reassign work")
+- 1 = High people focus ("Talk to them first")
 
 ### Part 2: Decision Pattern Flags (Q4-Q6)
 
-**Q4: Sunk Cost Bias**
-- 4 = Low bias ("Sunk cost is sunk")
-- 3 = Moderate awareness ("One more try, then switch")
-- 2 = High bias ("Keep using it")
-- 1 = Avoidance ("Wait for leadership")
+**Q4: Sunk Cost Bias (Binary)**
+- 2 = Low bias ("Sunk cost is sunk")
+- 1 = High bias ("Keep trying to make it work")
 
-**Q5: Loss Aversion**
-- 4 = Low aversion ("Take upside potential")
-- 3 = Moderate-low ("Take it but feel anxious")
-- 2 = Moderate-high ("Value certainty")
-- 1 = High aversion ("Earning less feels bad")
+**Q5: Loss Aversion (Binary)**
+- 2 = Low aversion ("Take upside potential")
+- 1 = High aversion ("Value certainty")
 
-**Q6: Reputational Risk Tolerance**
-- 4 = Low aversion ("Post with data")
-- 3 = Moderate-low ("Soften language")
-- 2 = Moderate-high ("Not worth the cost")
-- 1 = High aversion ("Never post contrarian takes")
+**Q6: Reputational Risk Tolerance (Binary)**
+- 2 = Low aversion ("Post with data")
+- 1 = High aversion ("Don't post")
 
 ### Part 3: Career Context (Q7-Q10)
 
@@ -139,12 +127,12 @@ Red flags to avoid:
 ### Archetype 1: High-Autonomy IC Trapped in Process-Heavy Role
 
 **Profile:**
-- Q1: 4 (High assertiveness)
-- Q2: 4 (Fast pace)
-- Q3: 4 (Task-focused)
-- Q4: 4 (Low sunk cost bias)
-- Q5: 4 (Low loss aversion)
-- Q6: 4 (Low reputational risk aversion)
+- Q1: 2 (High assertiveness)
+- Q2: 2 (Fast pace)
+- Q3: 2 (Task-focused)
+- Q4: 2 (Low sunk cost bias)
+- Q5: 2 (Low loss aversion)
+- Q6: 2 (Low reputational risk aversion)
 - Q7: A (Lack of autonomy drains me)
 - Q8: D (Want high autonomy/ownership)
 
@@ -207,12 +195,12 @@ Red flags to avoid:
 ### Archetype 2: Deliberate Thinker in Fast-Paced Chaos
 
 **Profile:**
-- Q1: 2 (Low assertiveness)
+- Q1: 1 (Low assertiveness)
 - Q2: 1 (Slow/deliberate pace)
-- Q3: 3 (Balanced task/people)
-- Q4: 3 (Moderate sunk cost awareness)
-- Q5: 2 (Moderate-high loss aversion)
-- Q6: 2 (Moderate-high reputational risk aversion)
+- Q3: 1 (People-focused)
+- Q4: 1 (Moderate-high sunk cost bias)
+- Q5: 1 (High loss aversion)
+- Q6: 1 (High reputational risk aversion)
 - Q7: B (Unclear expectations / shifting priorities)
 - Q8: E (Structured environment with clear processes)
 
@@ -277,12 +265,12 @@ Red flags to avoid:
 ### Archetype 3: People-Focused IC Doing Too Much Solo Work
 
 **Profile:**
-- Q1: 3 (Moderate assertiveness)
-- Q2: 3 (Moderate-fast pace)
-- Q3: 2 (People-focused)
-- Q4: 3 (Moderate sunk cost awareness)
-- Q5: 3 (Moderate-low loss aversion)
-- Q6: 3 (Moderate-low reputational risk aversion)
+- Q1: 1 (Low assertiveness - facilitative)
+- Q2: 2 (Fast pace - moves quickly)
+- Q3: 1 (People-focused)
+- Q4: 2 (Low sunk cost bias - rational decisions)
+- Q5: 2 (Low loss aversion - takes calculated risks)
+- Q6: 2 (Low reputational risk aversion - willing to speak up)
 - Q7: E (Too much solo work, not enough collaboration)
 - Q8: C (Building and leading teams)
 
@@ -347,12 +335,12 @@ Red flags to avoid:
 ### Archetype 4: Strategic Thinker Stuck in Execution Mode
 
 **Profile:**
-- Q1: 3 (Moderate assertiveness)
-- Q2: 2 (Moderate-slow, deliberate)
-- Q3: 4 (Task-focused)
-- Q4: 4 (Low sunk cost bias)
-- Q5: 2 (Moderate-high loss aversion)
-- Q6: 3 (Moderate-low reputational risk)
+- Q1: 2 (High assertiveness)
+- Q2: 1 (Slow/deliberate pace)
+- Q3: 2 (Task-focused)
+- Q4: 2 (Low sunk cost bias - cuts bad projects)
+- Q5: 1 (High loss aversion - prefers stability)
+- Q6: 2 (Low reputational risk - challenges assumptions)
 - Q7: C (Repetitive work without learning/growth)
 - Q8: B (Strategic thinking and planning)
 
@@ -449,20 +437,23 @@ Use this to map Q8 (ideal role) + wiring → specific recommendations.
 ## Usage Guide for Manual Scoring (Phase 0)
 
 **Steps:**
-1. Score Q1-Q6 numerically (1-4)
-2. Calculate averages:
-   - Assertiveness = Q1
-   - Pace = Q2
-   - Task/People = Q3
-3. Flag decision patterns:
-   - Sunk cost = Q4 (1-2 = high bias, 3-4 = low bias)
-   - Loss aversion = Q5 (1-2 = high aversion, 3-4 = low aversion)
-   - Reputational risk = Q6 (1-2 = high aversion, 3-4 = low aversion)
+1. Score Q1-Q6 with binary values (1 or 2)
+   - Each question has 2 options
+   - Option A typically scores 2 (high on dimension)
+   - Option B typically scores 1 (low on dimension)
+2. Map behavioral wiring:
+   - Assertiveness = Q1 (2 = high, 1 = low)
+   - Pace = Q2 (2 = fast, 1 = slow)
+   - Task/People = Q3 (2 = task-focused, 1 = people-focused)
+3. Map decision patterns:
+   - Sunk cost = Q4 (2 = low bias, 1 = high bias)
+   - Loss aversion = Q5 (2 = low aversion, 1 = high aversion)
+   - Reputational risk = Q6 (2 = low aversion, 1 = high aversion)
 4. Look up Q7 + wiring in Mismatch Matrix → diagnosis
 5. Look up Q8 + wiring in Environment Matrix → recommendations
 6. Fill in template with personalized language
 
-**Time per result (manual):** 3-5 minutes once you're familiar with the matrices.
+**Time per result (manual):** 2-3 minutes once you're familiar with the matrices (faster with binary scoring).
 
 ---
 

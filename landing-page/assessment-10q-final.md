@@ -1,7 +1,7 @@
 # Phase 0 Assessment: 10-Question Diagnosis
 
-**Target completion time:** 8-10 minutes
-**Format:** Multiple choice (auto-scorable)
+**Target completion time:** 5-7 minutes
+**Format:** Binary choice (2 options for Q1-Q6, multiple choice for Q7-Q10)
 **Email capture:** After result delivery
 
 ---
@@ -14,16 +14,12 @@
 
 What do you do?
 
-- [ ] A) Jump in: "Let's make a decision. Here's what I think we should do."
-- [ ] B) Ask: "What if we tried [specific approach]?" and see if others agree
-- [ ] C) Wait for someone else to step in, then support the best idea
-- [ ] D) Stay quiet unless directly asked for input
+- [ ] A) Jump in and make a decision. "Here's what we should do."
+- [ ] B) Keep facilitating discussion until the group reaches alignment.
 
 **Scoring:**
-- A = High assertiveness (4)
-- B = Moderate assertiveness (3)
-- C = Low assertiveness (2)
-- D = Very low assertiveness (1)
+- A = High assertiveness (2)
+- B = Low assertiveness (1)
 
 ---
 
@@ -33,16 +29,12 @@ What do you do?
 
 What happens next?
 
-- [ ] A) I make the call and move forward
-- [ ] B) I make the call but feel slightly uncomfortable
-- [ ] C) I keep researching until I hit 90%+
-- [ ] D) I struggle to decide when to stop researching
+- [ ] A) I make the call and move forward.
+- [ ] B) I keep researching until I hit 90%+.
 
 **Scoring:**
-- A = Fast pace (4)
-- B = Moderate-fast (3)
-- C = Moderate-slow (2)
-- D = Slow/deliberate (1)
+- A = Fast pace (2)
+- B = Slow/deliberate (1)
 
 ---
 
@@ -53,15 +45,11 @@ What happens next?
 What's your immediate instinct?
 
 - [ ] A) Reassign their work to someone faster. Timeline matters most.
-- [ ] B) Talk to them first to understand what's blocking them, then decide
-- [ ] C) Offer support and coaching, even if it means pushing the deadline
-- [ ] D) Avoid confrontation. Hope they figure it out on their own.
+- [ ] B) Talk to them first to understand what's blocking them, then decide.
 
 **Scoring:**
-- A = High task focus (4)
-- B = Balanced (3)
-- C = High people focus (2)
-- D = Avoid conflict (1)
+- A = High task focus (2)
+- B = High people focus (1)
 
 ---
 
@@ -74,15 +62,11 @@ What's your immediate instinct?
 What do you do?
 
 - [ ] A) Push for the new solution. Sunk cost is sunk.
-- [ ] B) Try one more adoption push, then switch if it fails
-- [ ] C) Keep using the internal tool. We already paid for it.
-- [ ] D) Wait for leadership to make the call
+- [ ] B) Keep trying to make the internal tool work. We already invested in it.
 
 **Scoring:**
-- A = Low sunk cost bias (4)
-- B = Moderate awareness (3)
-- C = High sunk cost bias (2)
-- D = Avoidance (1)
+- A = Low sunk cost bias (2)
+- B = High sunk cost bias (1)
 
 ---
 
@@ -91,20 +75,16 @@ What do you do?
 **You're choosing between two job offers:**
 
 **Offer A:** Guaranteed $120k salary
-**Offer B:** $100k salary + performance bonus that could add $0-40k (depends on factors partly outside your control)
+**Offer B:** $100k salary + performance bonus that could add $0-40k (partly outside your control)
 
 Which do you pick?
 
-- [ ] A) Offer B. Higher upside potential.
-- [ ] B) Offer B, but I'd feel slightly anxious about the variability
-- [ ] C) Offer A. I value certainty over upside.
-- [ ] D) Offer A. The thought of earning less than $120k feels bad.
+- [ ] A) Offer A. I value certainty.
+- [ ] B) Offer B. Higher upside potential.
 
 **Scoring:**
-- A = Low loss aversion (4)
-- B = Moderate-low (3)
-- C = Moderate-high (2)
-- D = High loss aversion (1)
+- A = High loss aversion (1)
+- B = Low loss aversion (2)
 
 ---
 
@@ -114,16 +94,12 @@ Which do you pick?
 
 Do you post it?
 
-- [ ] A) Yes. I have data. I'm not afraid to disagree publicly.
-- [ ] B) Yes, but I'd soften the language to avoid seeming combative
-- [ ] C) No. The potential reputational cost isn't worth it.
-- [ ] D) No. I never post contrarian takes publicly.
+- [ ] A) Yes. I have data and I'm not afraid to disagree publicly.
+- [ ] B) No. The potential reputational cost isn't worth it.
 
 **Scoring:**
-- A = Low reputational risk aversion (4)
-- B = Moderate-low (3)
-- C = Moderate-high (2)
-- D = High reputational risk aversion (1)
+- A = Low reputational risk aversion (2)
+- B = High reputational risk aversion (1)
 
 ---
 
@@ -192,7 +168,7 @@ Do you post it?
 
 ## User Flow Summary
 
-1. **Assessment (10 questions)** → Auto-scored, ~8-10 minutes
+1. **Assessment (10 questions)** → Auto-scored, ~5-7 minutes
 2. **Instant Result Display** → Wiring + Mismatch + Recommendations
 3. **Optional Open-Ended Questions** → AFTER result (self-selecting quality)
 4. **Email Capture** → "Want full diagnosis? [Email input]"
@@ -203,7 +179,8 @@ Do you post it?
 
 ### For Google Form (Option A - Recommended for Phase 0):
 - 10 questions = 10 sections in Google Form
-- Use required multiple choice for all questions
+- Q1-Q6: Use required multiple choice (2 options each - fast to answer)
+- Q7-Q10: Use required multiple choice (categorical selections)
 - Progress bar: Auto-enabled by Google Forms
 - After submission: Show link to optional qualitative questions
 - Responses → Google Sheets for manual scoring
@@ -215,16 +192,22 @@ Do you post it?
 - POST to Airtable/Zapier
 
 ### Scoring Logic:
-- Q1-Q3: Average for behavioral wiring profile
-- Q4-Q6: Flag high/low on each bias dimension
+- Q1-Q3: Binary scoring (1 or 2) for behavioral wiring profile
+- Q4-Q6: Binary scoring (1 or 2) for decision patterns
 - Q7-Q10: Categorical matching for diagnosis template
+
+**Key Change:** Simplified Q1-Q6 from 4 options to 2 options (binary choice)
+- Faster to answer (less decision fatigue)
+- Higher completion rate
+- Still captures the essential behavioral pattern
+- Target time reduced from 8-10 minutes to 5-7 minutes
 
 ---
 
 ## Next Steps After This File
 
 1. ✅ Complete this file (assessment-10q-final.md)
-2. ⏭ Create result-templates.md (8 archetype templates)
-3. ⏭ Create open-ended-questions.md (2 optional text questions)
-4. ⏭ Update landing page index.html
-5. ⏭ Build Google Form implementation guide
+2. ⏭ Update result-templates.md (adjust scoring for binary 1-2 scale)
+3. ⏭ Update google-form-implementation-guide.md (reflect 2-option structure)
+4. ⏭ Create open-ended-questions.md (2 optional text questions)
+5. ⏭ Update landing page index.html
