@@ -42,10 +42,10 @@ What happens next?
 
 **Your team is behind schedule on a critical project. One person is clearly struggling.**
 
-What's your immediate instinct?
+What's your first instinct?
 
-- [ ] A) Reassign their work to someone faster. Timeline matters most.
-- [ ] B) Talk to them first to understand what's blocking them, then decide.
+- [ ] A) Adjust the plan to protect the deadline.
+- [ ] B) Talk to them first, even if it costs us time.
 
 **Scoring:**
 - A = High task focus (2)
@@ -57,12 +57,12 @@ What's your immediate instinct?
 
 ### Q4: Internal Tool Sunk Cost (Bias Awareness)
 
-**Your team built an internal tool 6 months ago. Cost: $40k + 3 months of engineering time. Nobody uses it. Leadership keeps pushing adoption. You have budget for a better off-the-shelf solution.**
+**Your team built an internal tool 6 months ago. Cost: $40k + 3 months of engineering time. Adoption is lower than expected. You're now evaluating whether to stick with it or switch to an off-the-shelf solution.**
 
 Which argument feels more compelling to you?
 
-- [ ] A) "Sunk cost is sunk. Let's cut losses and switch now."
-- [ ] B) "We invested heavily. Let's give it one more quarter before giving up."
+- [ ] A) "The investment is spent either way. Evaluate what's best going forward."
+- [ ] B) "We should give the investment more time to prove itself."
 
 **Scoring:**
 - A = Low sunk cost bias (2)
@@ -74,13 +74,13 @@ Which argument feels more compelling to you?
 
 **You're choosing between two job offers:**
 
-**Offer A:** Guaranteed $120k salary
-**Offer B:** $100k salary + performance bonus that could add $0-40k (partly outside your control)
+**Offer A:** Guaranteed $115k salary
+**Offer B:** $80k base + performance bonus of $0-70k (average person in this role hits $125k)
 
 Which do you pick?
 
-- [ ] A) Offer A. I value certainty.
-- [ ] B) Offer B. Higher upside potential.
+- [ ] A) Offer A. I value the guaranteed amount.
+- [ ] B) Offer B. The upside potential is worth the risk.
 
 **Scoring:**
 - A = High loss aversion (1)
@@ -90,12 +90,12 @@ Which do you pick?
 
 ### Q6: Contrarian LinkedIn Post (Reputational Risk)
 
-**You have a well-researched, contrarian take on a hot topic in your industry. It contradicts what 3 influential people in your network just posted.**
+**You have a well-researched, contrarian take on a hot topic in your industry. It contradicts what 3 influential people in your network just posted. You believe posting it could help your reputation long-term, but will create visible disagreement in the short-term.**
 
 Do you post it?
 
-- [ ] A) Yes. I have data and I'm not afraid to disagree publicly.
-- [ ] B) No. The potential reputational cost isn't worth it.
+- [ ] A) Yes. The long-term benefit outweighs short-term friction.
+- [ ] B) No. Short-term relationship capital matters more.
 
 **Scoring:**
 - A = Low reputational risk aversion (2)
@@ -116,7 +116,7 @@ Do you post it?
 - [ ] E) Too much solo work, not enough collaboration
 - [ ] F) High stress without control over outcomes
 - [ ] G) Lack of impact/meaning
-- [ ] H) None of these / Not currently drained
+- [ ] H) Something else (please specify)
 
 **Scoring:** Categorical (used for mismatch diagnosis)
 
@@ -126,13 +126,14 @@ Do you post it?
 
 **If you could design your ideal next role, what would you emphasize MOST?**
 
+*Pick the one that matters most, even if others are close.*
+
 - [ ] A) Deep technical/specialist work
 - [ ] B) Strategic thinking and planning
 - [ ] C) Building and leading teams
 - [ ] D) High autonomy and ownership
 - [ ] E) Structured environment with clear processes
 - [ ] F) Fast-paced, dynamic environment
-- [ ] G) Mix of several (can't pick just one)
 
 **Scoring:** Categorical (used for environment recommendations)
 
