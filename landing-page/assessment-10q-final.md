@@ -12,10 +12,10 @@
 
 **You're in a strategy meeting. The conversation has been going in circles for 15 minutes.**
 
-What do you do?
+Which sounds more like you?
 
-- [ ] A) Jump in and make a decision. "Here's what we should do."
-- [ ] B) Keep facilitating discussion until the group reaches alignment.
+- [ ] A) I jump in: "We need to make a call. Here's what I think we should do."
+- [ ] B) I keep the discussion going: "Let's hear one more perspective before deciding."
 
 **Scoring:**
 - A = High assertiveness (2)
@@ -59,10 +59,10 @@ What's your immediate instinct?
 
 **Your team built an internal tool 6 months ago. Cost: $40k + 3 months of engineering time. Nobody uses it. Leadership keeps pushing adoption. You have budget for a better off-the-shelf solution.**
 
-What do you do?
+Which argument feels more compelling to you?
 
-- [ ] A) Push for the new solution. Sunk cost is sunk.
-- [ ] B) Keep trying to make the internal tool work. We already invested in it.
+- [ ] A) "Sunk cost is sunk. Let's cut losses and switch now."
+- [ ] B) "We invested heavily. Let's give it one more quarter before giving up."
 
 **Scoring:**
 - A = Low sunk cost bias (2)
