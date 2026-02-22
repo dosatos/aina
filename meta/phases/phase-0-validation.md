@@ -3,7 +3,7 @@
 **Status:** In Progress
 **Goal:** Prove demand exists before building. Set up conversion infrastructure.
 **Timeline:** 2 weeks (target completion: March 7, 2026)
-**Budget:** $200 (organic-first strategy)
+**Budget:** \$200 (organic-first strategy)
 
 ---
 
@@ -16,10 +16,10 @@
 
 ## Strategy: Organic-First + CLI-First Development
 
-**Why not $1k-2k in ads right away?**
+**Why not \$1k-2k in ads right away?**
 - Organic validation is stronger signal (people share without you paying)
 - Learn what language resonates before spending on ads
-- Lower risk ($200 vs $2,000)
+- Lower risk (\$200 vs \$2,000)
 - Build community from day one
 
 **Why Claude Code direct (not v0/bolt/GUI tools)?**
@@ -32,7 +32,7 @@
 1. Build LP with Claude Code directly (HTML + Tailwind CDN)
 2. Launch with organic posts (Reddit, Twitter, LinkedIn, communities)
 3. See what gets traction (upvotes, comments, shares)
-4. Amplify what works with small paid test ($100-150)
+4. Amplify what works with small paid test (\$100-150)
 5. If organic + small paid = validation → scale in Phase 1
 
 **See research/tools/landing-page-builders-comparison.md for full analysis of Claude Code vs v0.app vs bolt.new**
@@ -103,8 +103,8 @@
 - **Con:** Doesn't validate willingness to pay
 
 **Option B: Pre-Order (Validates payment)**
-- Copy: "Pre-order the full assessment — $39 early-bird (normally $49)"
-- CTA: "Reserve Your Spot - $39"
+- Copy: "Pre-order the full assessment — \$39 early-bird (normally \$49)"
+- CTA: "Reserve Your Spot - \$39"
 - Collect: Email + payment via Stripe
 - **Pro:** Proves people will pay
 - **Con:** Higher friction, need refund policy
@@ -138,7 +138,7 @@
 
 Now that LP + micro-assessment are live, seed them organically.
 
-**Reddit Posts (Organic - $0)**
+**Reddit Posts (Organic - \$0)**
 
 Target subreddits:
 - r/cscareerquestions (3.9M members)
@@ -177,7 +177,7 @@ Happy to share what I'm learning.
 
 ---
 
-**Twitter/X Thread (Organic - $0)**
+**Twitter/X Thread (Organic - \$0)**
 
 Thread format that works:
 ```
@@ -233,7 +233,7 @@ Or just bookmark this if it's useful later.
 
 ---
 
-**LinkedIn Post (Organic - $0)**
+**LinkedIn Post (Organic - \$0)**
 
 LinkedIn works differently — personal story > clinical analysis.
 
@@ -283,7 +283,7 @@ If you're mid-career, feeling stuck, and open to trying something new — commen
 
 ---
 
-**Hacker News "Show HN" (Organic - $0)**
+**Hacker News "Show HN" (Organic - \$0)**
 
 HN is great for getting analytical/engineer types IF you frame it right.
 
@@ -321,7 +321,7 @@ Would love feedback from this community — especially on the methodology or if 
 
 ---
 
-**Indie Hackers (Organic - $0)**
+**Indie Hackers (Organic - \$0)**
 
 Frame as a build-in-public journey.
 
@@ -424,21 +424,21 @@ Open to feedback / questions on approach.
 ---
 
 #### Day 11-12: Amplify What Works (Small Paid Test)
-**Goal:** Take what worked organically and amplify with $100-150
+**Goal:** Take what worked organically and amplify with \$100-150
 
 **If Reddit posts got traction:**
-- Run Reddit Ads ($100) targeting same subreddits
+- Run Reddit Ads (\$100) targeting same subreddits
 - Use the EXACT language from your organic post that worked
 - Target: same demographics as subreddit
 
 **If LinkedIn post did well:**
-- Boost the post ($50-75) to expand reach
+- Boost the post (\$50-75) to expand reach
 - OR create LinkedIn ad using same copy
 - Target: 25-40, Software Engineers/PMs, US
 
 **If Twitter thread resonated:**
 - Keep posting (organic is free)
-- OR test Twitter Ads ($50) to amplify best-performing thread
+- OR test Twitter Ads (\$50) to amplify best-performing thread
 
 **If nothing got traction organically:**
 - DON'T spend on ads yet
@@ -448,7 +448,7 @@ Open to feedback / questions on approach.
 
 **Tasks:**
 - [ ] Choose best-performing organic channel
-- [ ] Set up small paid test ($100-150)
+- [ ] Set up small paid test (\$100-150)
 - [ ] Run for 3-5 days
 - [ ] Monitor conversion vs organic
 
@@ -518,18 +518,18 @@ Open to feedback / questions on approach.
 
 | Item | Cost | Notes |
 |------|------|-------|
-| Landing page | $0 | Claude Code direct (HTML + Tailwind CDN) |
-| Hosting | $0 | Vercel free tier |
-| Micro-assessment tool | $0 | Google Forms (free) |
-| Email capture | $0 | Google Sheets or Airtable free tier |
-| Analytics/heatmaps | $0 | Google Analytics + Microsoft Clarity (free) |
-| Domain (optional) | $12 | Only if you want custom URL (Vercel provides free subdomain) |
-| Reddit Ads (small test) | $100 | Only if organic Reddit posts get traction |
-| LinkedIn boost (optional) | $50 | Only if organic post performs well |
-| Buffer | $38 | For surprises |
-| **Total** | **$200** | **$0-12 if staying purely organic** |
+| Landing page | \$0 | Claude Code direct (HTML + Tailwind CDN) |
+| Hosting | \$0 | Vercel free tier |
+| Micro-assessment tool | \$0 | Google Forms (free) |
+| Email capture | \$0 | Google Sheets or Airtable free tier |
+| Analytics/heatmaps | \$0 | Google Analytics + Microsoft Clarity (free) |
+| Domain (optional) | \$12 | Only if you want custom URL (Vercel provides free subdomain) |
+| Reddit Ads (small test) | \$100 | Only if organic Reddit posts get traction |
+| LinkedIn boost (optional) | \$50 | Only if organic post performs well |
+| Buffer | \$38 | For surprises |
+| **Total** | **\$200** | **\$0-12 if staying purely organic** |
 
-**Note:** You can do Phase 0 for **$0-12** if you skip paid amplification and rely purely on organic. The $200 budget includes small paid tests to amplify what works organically.
+**Note:** You can do Phase 0 for **\$0-12** if you skip paid amplification and rely purely on organic. The \$200 budget includes small paid tests to amplify what works organically.
 
 **Tools:** All free tier (Claude Code, Vercel, Google Forms, Airtable, Google Analytics)
 
@@ -544,7 +544,7 @@ Open to feedback / questions on approach.
 | **LP doesn't convert** | Have 3 template variants ready to swap in |
 | **People sign up but don't engage** | Add follow-up email asking "What made you sign up?" |
 | **Wrong audience** | Persona research is solid, but if completely off, test Template 2 (Founders) or Template 3 (Engineers) |
-| **Spent $200 on ads, got nothing** | Only spend on ads AFTER organic works; don't pay to amplify what doesn't resonate organically |
+| **Spent \$200 on ads, got nothing** | Only spend on ads AFTER organic works; don't pay to amplify what doesn't resonate organically |
 
 ---
 
@@ -597,7 +597,7 @@ Open to feedback / questions on approach.
 
 **Week 2 (Days 8-14):**
 11. Analyze which channel worked
-12. Amplify with small paid test ($100-150) if warranted
+12. Amplify with small paid test (\$100-150) if warranted
 13. Iterate based on feedback
 14. Make GO/NO-GO decision
 

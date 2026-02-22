@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Career assessment for mid-career professionals. Find out why you're stuck in 10 minutes.">
+  <title>AINAM: Career Assessment</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #0a0e1a;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', 'SF Mono', 'Courier New', monospace;
+    }
+
+    /* Code block syntax highlighting colors */
+    .token-keyword { color: #ff79c6; }
+    .token-function { color: #50fa7b; }
+    .token-string { color: #f1fa8c; }
+    .token-comment { color: #6272a4; }
+    .token-number { color: #bd93f9; }
+    .token-operator { color: #ff79c6; }
+
+    /* Neon glow effects */
+    .neon-cyan {
+      box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+    }
+
+    .neon-cyan-strong {
+      box-shadow: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 60px rgba(34, 211, 238, 0.3);
+    }
+
+    .neon-magenta {
+      box-shadow: 0 0 20px rgba(255, 121, 198, 0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0e1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark-bg': '#0a0e1a',
+            'dark-surface': '#131824',
+            'dark-border': '#1e293b',
+            'neon-cyan': '#22d3ee',
+            'neon-magenta': '#ff79c6',
+            'neon-green': '#50fa7b',
+            'neon-yellow': '#f1fa8c',
+            'neon-purple': '#bd93f9',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark-bg text-slate-100">
+
+  <!-- Header -->
+  <header class="border-b border-dark-border py-8 sticky top-0 bg-dark-bg/95 backdrop-blur-sm z-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="inline-block px-3 py-1 bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan text-xs font-mono uppercase tracking-wider mb-4">
+        Mid-Career Professionals
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
+        AINAM: Career Assessment
+      </h1>
+      <p class="text-xl text-slate-400 font-mono">
+        10 minutes · Find out why you're stuck
+      </p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- Pain Section -->
+    <section class="mb-20 fade-in">
+
+      <!-- Main Hook -->
+      <div class="mb-12">
+        <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+          You've Been Researching<br>
+          for 6 Months.
+        </h2>
+        <p class="text-3xl md:text-4xl font-bold text-neon-cyan leading-tight">
+          Still Don't Know What to Do.
+        </p>
+      </div>
+
+      <!-- Context -->
+      <div class="space-y-4 text-lg text-slate-300 mb-12 leading-relaxed">
+        <p>You know more about career paths than most career coaches.</p>
+        <p>You've read 20+ articles. Talked to 15 people. Made 3 pro/con lists.</p>
+        <p class="text-white font-semibold">And you're exactly where you started.</p>
+      </div>
+
+      <!-- Code Block: The Loop -->
+      <div class="bg-dark-surface border border-dark-border p-6 mb-12 font-mono text-sm overflow-x-auto">
+        <div class="text-slate-500 mb-2">// your_career_decision.js</div>
+        <pre class="text-slate-200"><span class="token-keyword">while</span> (uncertain) {
+  <span class="token-function">research</span>();        <span class="token-comment">// Read another article</span>
+  <span class="token-function">askFriends</span>();      <span class="token-comment">// Get 10 more opinions</span>
+  <span class="token-function">makeProConList</span>(); <span class="token-comment">// Your 4th list</span>
+  <span class="token-comment">// Still stuck</span>
+}
+
+<span class="token-comment">// Infinite loop.</span>
+<span class="token-comment">// You're treating symptoms, not root cause.</span></pre>
+      </div>
+
+      <!-- Problem Statement -->
+      <div class="bg-neon-magenta/5 border-l-4 border-neon-magenta p-8 mb-12">
+        <p class="text-lg text-slate-300 mb-3">
+          The problem isn't lack of information.
+        </p>
+        <p class="text-2xl md:text-3xl font-bold text-white">
+          It's that more information won't solve this.
+        </p>
+      </div>
+
+      <!-- What Failed -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-bold text-white mb-6">What You've Already Tried:</h3>
+
+        <div class="bg-dark-surface border border-dark-border p-6 font-mono text-sm overflow-x-auto">
+          <div class="text-slate-500 mb-3">// failed_strategies.js</div>
+          <pre class="text-slate-200 leading-relaxed"><span class="text-red-500">×</span> <span class="token-function">careerCoach</span>()
+  <span class="token-comment">// $1,600 to hear "follow your passion"</span>
+  <span class="token-comment">// Still don't know which path</span>
+
+<span class="text-red-500">×</span> <span class="token-function">personalityTest</span>()
+  <span class="token-comment">// Result: "You're INTJ"</span>
+  <span class="token-comment">// Which career does that mean?</span>
+
+<span class="text-red-500">×</span> <span class="token-function">askFriendsForAdvice</span>()
+  <span class="token-comment">// 10 opinions, 10 different answers</span>
+  <span class="token-comment">// Everyone tells you what THEY would do</span>
+
+<span class="text-red-500">×</span> <span class="token-function">makeProConList</span>()
+  <span class="token-comment">// Logical on paper</span>
+  <span class="token-comment">// Visceral in reality</span></pre>
+        </div>
+      </div>
+
+      <!-- Stakes -->
+      <div class="bg-red-950/30 border-l-4 border-red-500 p-8">
+        <p class="text-xl font-bold text-red-400 mb-6">What's at stake:</p>
+
+        <div class="space-y-4 text-slate-300">
+          <div class="flex gap-3">
+            <span class="text-red-500 font-mono">•</span>
+            <span>Average time stuck: <strong class="text-white">3 years</strong> (until age 39)</span>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-red-500 font-mono">•</span>
+            <span>Wrong move costs: <strong class="text-white">$8,200 in year one</strong> + 3 years in wrong direction</span>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-red-500 font-mono">•</span>
+            <span>Real fear: <em>"Am I throwing away 6 years of expertise for nothing?"</em></span>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-red-500 font-mono">•</span>
+            <span>Every year stuck = opportunity cost compounding</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Divider -->
+    <div class="flex items-center gap-4 mb-16">
+      <div class="flex-1 h-px bg-gradient-to-r from-transparent via-dark-border to-transparent"></div>
+      <div class="text-slate-500 font-mono text-sm uppercase tracking-wider">How it works</div>
+      <div class="flex-1 h-px bg-gradient-to-r from-transparent via-dark-border to-transparent"></div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+        Break the Loop
+      </h2>
+      <p class="text-xl text-slate-400 mb-16 text-center font-mono">
+        10 minutes to root cause
+      </p>
+
+      <!-- Code Block: How It Works -->
+      <div class="bg-dark-surface border border-dark-border p-8 md:p-10 mb-12 font-mono text-sm overflow-x-auto">
+        <div class="text-slate-500 mb-4">// how_it_works.js</div>
+        <pre class="text-slate-200 leading-relaxed"><span class="token-function">takeAssessment</span>()
+  <span class="token-comment">// 15 behavioral questions (10 minutes)</span>
+  <span class="token-comment">// No right answers. Just patterns.</span>
+
+  .<span class="token-function">then</span>(responses => <span class="token-function">analyzeBehavioralProfile</span>(responses))
+    <span class="token-comment">// Structure need: 0.78 (high)</span>
+    <span class="token-comment">// Pace preference: 0.45 (moderate)</span>
+    <span class="token-comment">// Social energy: 0.32 (low)</span>
+    <span class="token-comment">// Autonomy drive: 0.82 (high)</span>
+
+  .<span class="token-function">then</span>(profile => <span class="token-function">diagnoseMismatch</span>(profile, currentRole))
+    <span class="token-comment">// "High structure need in low-structure role"</span>
+    <span class="token-comment">// Mismatch score: 68%</span>
+
+  .<span class="token-function">then</span>(diagnosis => {
+    <span class="token-keyword">return</span> {
+      <span class="token-string">why_stuck</span>: <span class="token-string">"Your nervous system is rejecting the mismatch"</span>,
+      <span class="token-string">root_cause</span>: <span class="token-string">"Not lack of options. Wrong fit."</span>,
+      <span class="token-string">next_step</span>: <span class="token-string">"Now you know WHY. Make next move with data."</span>
+    };
+  });</pre>
+      </div>
+
+      <!-- Text Explanation -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-dark-surface border border-dark-border p-6">
+          <div class="text-neon-cyan font-bold text-lg mb-3 font-mono">01. Assessment</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            15 behavioral questions. No right answers. Just patterns.
+          </p>
+        </div>
+
+        <div class="bg-dark-surface border border-dark-border p-6">
+          <div class="text-neon-cyan font-bold text-lg mb-3 font-mono">02. Profile</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Numbers, not types. See how you're wired across structure, pace, energy, autonomy.
+          </p>
+        </div>
+
+        <div class="bg-dark-surface border border-dark-border p-6">
+          <div class="text-neon-cyan font-bold text-lg mb-3 font-mono">03. Diagnosis</div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Root cause. Not symptoms. See the mismatch between how you're wired and what your role rewards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparison -->
+      <div class="bg-dark-surface border border-dark-border p-8 space-y-6">
+        <div>
+          <p class="text-slate-500 mb-1"><span class="text-red-500 font-mono">×</span> Not: "You're INTJ"</p>
+          <p class="text-white"><span class="text-neon-green font-mono">✓</span> But: "High structure need in low-structure role = constant anxiety"</p>
+        </div>
+
+        <div>
+          <p class="text-slate-500 mb-1"><span class="text-red-500 font-mono">×</span> Not: "You're analytical"</p>
+          <p class="text-white"><span class="text-neon-green font-mono">✓</span> But: "You need clear frameworks. Your job rewards ambiguity. That's the gap."</p>
+        </div>
+
+        <div>
+          <p class="text-slate-500 mb-1"><span class="text-red-500 font-mono">×</span> Not: "Take a quiz, get a type"</p>
+          <p class="text-white"><span class="text-neon-green font-mono">✓</span> But: "Take assessment, see mismatch, understand why"</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="text-center py-16 bg-gradient-to-br from-neon-cyan/10 to-neon-magenta/10 border border-neon-cyan/30 neon-cyan mb-20">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+          Ready to break the loop?
+        </h2>
+
+        <a
+          href="#assessment"
+          onclick="gtag('event', 'cta_click', {'event_category': 'engagement'}); alert('Phase 0: Replace with Google Form or assessment URL');"
+          class="inline-block bg-neon-cyan hover:bg-neon-cyan/90 text-dark-bg text-xl md:text-2xl font-bold px-12 py-6 transition-all neon-cyan-strong"
+        >
+          Start 10-Minute Assessment
+        </a>
+
+        <div class="mt-8 text-slate-400 font-mono">
+          <p class="mb-2">Free · No signup · See results first</p>
+          <p class="text-sm text-slate-500">Decide after you see your profile</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-dark-border py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <div class="space-y-2 text-sm text-slate-500 font-mono">
+        <p>Built on Big Five (IPIP) + O*NET Holland Codes</p>
+        <p class="text-slate-400">Not astrology. Not MBTI. Behavioral pattern detection.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Analytics -->
+  <script>
+    // Scroll depth tracking
+    let scrollDepths = [25, 50, 75, 100];
+    let scrollTracked = [];
+    window.addEventListener('scroll', function() {
+      let scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      scrollDepths.forEach(function(depth) {
+        if (scrollPercent >= depth && !scrollTracked.includes(depth)) {
+          scrollTracked.push(depth);
+          gtag('event', 'scroll_depth', {'event_category': 'engagement', 'event_label': depth + '%'});
+        }
+      });
+    });
+
+    // Time on page
+    [10, 30, 60, 120].forEach(function(seconds) {
+      setTimeout(function() {
+        gtag('event', 'time_on_page', {'event_category': 'engagement', 'event_label': seconds + 's'});
+      }, seconds * 1000);
+    });
+  </script>
+
+</body>
+</html>
