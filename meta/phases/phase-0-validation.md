@@ -109,28 +109,39 @@
 - **Pro:** Proves people will pay
 - **Con:** Higher friction, need refund policy
 
-**Option C: Micro-Assessment (Validates engagement)**
-- Copy: "Take a 3-minute risk profile quiz — get results + join waitlist for full platform"
-- CTA: "Get My Risk Profile"
-- Collect: 5 questions → instant result → email capture
-- **Pro:** Gives value first, tests completion behavior, viral potential
-- **Con:** Requires building a mini-assessment (Google Form or Typeform)
+**Option C: Diagnostic Assessment (Validates engagement + product value)**
+- Copy: "Take a 10-minute career diagnosis — get personalized results + full report via email"
+- CTA: "See Why I'm Stuck"
+- Collect: 10 questions → personalized diagnosis (email within 24 hours) → email capture
+- **Pro:** Validates product differentiation, gives real value, tests completion behavior, gathers qualitative feedback
+- **Con:** Requires building assessment + manual scoring for first 50 responses (3-5 min each)
 
-**RECOMMENDATION: Start with Option C (Micro-Assessment)**
+**RECOMMENDATION: Start with Option C (Diagnostic Assessment)**
 
 **Why:**
-- Validates engagement (do they complete?)
+- Validates engagement (do they complete 10 questions?)
+- Validates product value (does diagnosis feel differentiated?)
 - Gives them value before asking for email
-- Teaser result creates curiosity for full platform
-- Can add payment option later if engagement is high
+- Personalized diagnosis creates "how did you know?" moments
+- Qualitative feedback informs full product build
+- Can automate after validating messaging with first 50 responses
 
 **Tasks:**
-- [ ] Build 3-minute risk profile quiz (5 questions, instant scoring)
-- [ ] Write result variations (3-5 result types)
-- [ ] Add "Join waitlist for full platform" at end
+- [ ] Build 10-question diagnostic assessment using Google Forms
+  - Follow guide: `landing-page/google-form-implementation-guide.md`
+  - Copy questions from: `landing-page/assessment-10q-final.md`
+  - 3 behavioral wiring + 3 decision patterns + 4 career context questions
+- [ ] Set up optional feedback form (2 text questions post-result)
+  - Questions in: `landing-page/open-ended-questions.md`
+- [ ] Set up scoring spreadsheet
+  - Use templates from: `landing-page/result-templates.md`
+  - 4 archetype result templates with personalized diagnosis
 - [ ] Connect email capture
+- [ ] Manually score first 50 responses (3-5 min each, send within 24 hours)
 
-**Tools:** Google Forms (free) or Typeform (free tier)
+**Tools:** Google Forms (free), Google Sheets (free)
+**Build time:** 1-2 hours (vs 10 minutes for simple quiz)
+**Manual work:** 3-5 min per response for first 50 (then automate if metrics hit targets)
 
 ---
 
@@ -576,14 +587,18 @@ Open to feedback / questions on approach.
 ## Next Actions (Immediate)
 
 **This week (Days 1-4):**
-1. Choose LP template (Template 1 - Career Clarity recommended)
-2. Build landing page with Claude Code (1-2 hours)
-   - `mkdir landing-page && cd landing-page`
-   - Prompt Claude to generate index.html with Template 1 copy
-   - Test locally, iterate, deploy with `vercel deploy`
-3. Build micro-assessment (Google Forms - 5 questions, instant result) (10 min)
-4. Set up tracking (Google Analytics) (5 min)
-5. Write organic seeding posts:
+1. ✅ Landing page built and deployed
+   - File: `landing-page/index.html`
+   - Variant: Diagnostic Authority (Analysis Paralysis hook)
+   - Status: Live, updated with "10 diagnostic questions" messaging
+2. Build diagnostic assessment with Google Forms (1-2 hours)
+   - Follow: `landing-page/google-form-implementation-guide.md`
+   - Questions: `landing-page/assessment-10q-final.md` (10 questions)
+   - Scoring: `landing-page/result-templates.md` (4 archetype templates)
+   - Optional feedback: `landing-page/open-ended-questions.md`
+   - Set up response tracking spreadsheet
+3. Set up tracking (Google Analytics) (5 min)
+4. Write organic seeding posts:
    - Reddit post (value-first, not promotional)
    - Twitter thread
    - LinkedIn post (personal story)
@@ -635,10 +650,17 @@ Open to feedback / questions on approach.
 - [x] Research complete
 - [x] Landing page templates ready
 - [x] Phase 0 plan written
-- [ ] LP template chosen
-- [ ] Smoke test approach chosen
-- [ ] Landing page built
-- [ ] Ads live
+- [x] LP template chosen (Diagnostic Authority variant)
+- [x] Landing page built and deployed (`landing-page/index.html`)
+- [x] Smoke test approach chosen (Option C: 10-question diagnostic assessment)
+- [x] Assessment questions designed (`landing-page/assessment-10q-final.md`)
+- [x] Result templates created (`landing-page/result-templates.md`)
+- [x] Implementation guide written (`landing-page/google-form-implementation-guide.md`)
+- [ ] Google Form assessment built
+- [ ] Response tracking spreadsheet set up
+- [ ] First test users completed assessment
+- [ ] Organic seeding posts written
+- [ ] Posts live on Reddit/Twitter/LinkedIn
 - [ ] Signups coming in
 
-**Next step:** Review this plan → Make decisions on open questions → Start Day 1 tasks
+**Next step:** Build Google Form assessment (1-2 hours) → Test with 5 people → Launch organic seeding
