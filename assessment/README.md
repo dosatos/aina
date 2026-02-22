@@ -8,9 +8,16 @@
 
 ### Core Methodology Files
 
+**`assessment-10q-final.md`** — The instrument (10 diagnostic questions)
+- 3 behavioral wiring questions (assertiveness, pace, task/people)
+- 3 decision pattern questions (sunk cost, loss aversion, reputational risk)
+- 4 career context questions (drain, ideal role, role type, experience)
+- Binary choices (Q1-Q6) for fast completion
+- Scoring logic for each question
+
 **`result-system-design.md`** — The complete result system design
-- Scoring algorithms (Action Orientation + Risk Posture)
-- The 4 archetypes (Accelerator, Strategist, Executor, Analyst)
+- Scoring algorithms (Operating Velocity + Risk Posture)
+- The 4 archetypes (Driver, Architect, Operator, Evaluator)
 - 6 tension detection rules
 - Mismatch diagnostic logic
 - Result page structure
@@ -29,15 +36,14 @@
 ## What's NOT Here (Lives in `/landing-page/`)
 
 **Implementation files** (user-facing):
-- `assessment-10q-final.md` — The actual 10 questions for Google Form
-- `google-form-implementation-guide.md` — How to build the form
-- `open-ended-questions.md` — Optional feedback questions
-- `index.html` — Landing page
-- Hero/pain variants — Copy testing
+- `google-form-implementation-guide.md` — How to build the Google Form
+- `open-ended-questions.md` — Optional feedback questions (post-result)
+- `index.html` — Landing page HTML
+- Hero/pain variants — Copy testing for landing page
 
 **Why the separation?**
-- `/assessment/` = Product methodology (how the system works)
-- `/landing-page/` = Implementation (what users see/do)
+- `/assessment/` = Product methodology (the instrument + how results are generated)
+- `/landing-page/` = Implementation (how to deploy it + marketing content)
 
 ---
 
@@ -45,19 +51,21 @@
 
 ```
 /assessment/
-  ├── result-system-design.md     ← Defines HOW results are generated
-  └── result-templates.md          ← Contains scoring formulas
+  ├── assessment-10q-final.md      ← The instrument (10 questions)
+  ├── result-templates.md          ← Scoring formulas + matrices
+  └── result-system-design.md      ← Result generation framework
 
 /landing-page/
-  ├── assessment-10q-final.md      ← The questions (references scoring from above)
-  ├── google-form-implementation-guide.md ← References questions
-  └── index.html                   ← Landing page (links to assessment)
+  ├── google-form-implementation-guide.md ← How to build (references questions)
+  ├── open-ended-questions.md      ← Optional feedback
+  └── index.html                   ← Landing page (links to form)
 ```
 
 **Flow:**
-1. User takes assessment (`assessment-10q-final.md`)
+1. User completes questions from `assessment-10q-final.md` (via Google Form)
 2. Responses scored using logic in `result-templates.md`
 3. Results generated using framework in `result-system-design.md`
+4. Optional feedback collected via `open-ended-questions.md`
 
 ---
 

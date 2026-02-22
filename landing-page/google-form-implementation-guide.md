@@ -47,7 +47,7 @@
      (This link will also be sent via email)
      ```
 
-### Step 3: Add Questions (copy from assessment-10q-final.md)
+### Step 3: Add Questions (copy from /assessment/assessment-10q-final.md)
 
 **For each question:**
 - Question type: **Multiple choice**
@@ -412,7 +412,7 @@ Q2 | I struggle to decide when to stop | 1
 [...continue for all questions]
 ```
 
-Copy the scoring from `assessment-10q-final.md`
+Copy the scoring from `/assessment/assessment-10q-final.md`
 
 ---
 
@@ -624,7 +624,7 @@ Copy the scoring from `assessment-10q-final.md`
 
 ## Resources
 
-- **Assessment questions:** `/landing-page/assessment-10q-final.md`
+- **Assessment questions:** `/assessment/assessment-10q-final.md`
 - **Result templates:** `/landing-page/result-templates.md`
 - **Feedback questions:** `/landing-page/open-ended-questions.md`
 - **Landing page:** `/landing-page/index.html`
