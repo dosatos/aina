@@ -20,6 +20,17 @@
 - 2 = High task focus ("Reassign work")
 - 1 = High people focus ("Talk to them first")
 
+**Operating Velocity Score:** Q1 + Q2 + Q3 (range: 3-6)
+
+### Intensity Scaling Bands (Operating Velocity)
+
+| Score | Band Label | Language Modifier |
+|-------|-----------|------------------|
+| 6 | Very High | "decisive and fast-moving" |
+| 5 | High | "generally decisive" or "quick to act" |
+| 4 | Moderate | "balanced between speed and caution" |
+| 3 | Low | "deliberate and consensus-oriented" |
+
 ### Part 2: Decision Pattern Flags (Q4-Q6)
 
 **Q4: Sunk Cost Bias (Binary)**
@@ -33,6 +44,17 @@
 **Q6: Reputational Risk Tolerance (Binary)**
 - 2 = Low aversion ("Post with data")
 - 1 = High aversion ("Don't post")
+
+**Risk Posture Score:** Q4 + Q5 + Q6 (range: 3-6)
+
+### Intensity Scaling Bands (Risk Posture)
+
+| Score | Band Label | Language Modifier |
+|-------|-----------|------------------|
+| 6 | Very High | "comfortable taking visible risks" or "bold in decision-making" |
+| 5 | Moderate-High | "takes calculated risks" or "selective about risk" |
+| 4 | Moderate | "risk-aware but pragmatic" |
+| 3 | Low | "prefers protecting downside" or "values certainty" |
 
 ### Part 3: Career Context (Q7-Q10)
 
@@ -54,7 +76,6 @@
 - E = Structured environment
 - F = Fast-paced/dynamic
 
-*Note: "Mix of several" option removed - forces prioritization for better signal*
 
 **Q9: Role Type** (context)
 - A = IC
@@ -69,6 +90,63 @@
 - C = 6-10 years
 - D = 11-15 years
 - E = 16+ years
+
+### How to Use Q9/Q10 (Role Context Injection)
+
+Add role-specific language to make results feel tailored:
+
+**Examples:**
+
+| Q9 | Q10 | Context Language to Add |
+|----|-----|------------------------|
+| IC | 0-2 years | "As an early-career IC, this pattern often shows up as..." |
+| IC | 6-10 years | "With 6-10 years as an IC, you've likely noticed..." |
+| Manager | 11-15 years | "As a manager with 11+ years of experience, you know how to..." |
+| Senior Leader | 16+ years | "At your level (Director+, 16+ years), this tension manifests as..." |
+| Between roles | Any | "This mismatch may be why you're between roles right now..." |
+
+**Where to inject:**
+- In "THE MISMATCH" section: "As a [role] with [years] of experience, this hits differently because..."
+- In "WHERE YOU SHINE" section: "At your career stage ([role], [years]), look for..."
+- In red flags: "For someone at your level, avoid..."
+
+**Effect:** Results feel less like horoscopes, more like someone who understands your specific career situation.
+
+---
+
+## Tension Detection & Prioritization
+
+Based on result-system-design.md, detect and rank tensions using this system:
+
+### Tension Priority Weights
+
+| Tension | Weight | Why |
+|---------|--------|-----|
+| Sunk Cost Trap | 3 | Concrete, immediately actionable |
+| Public-Private Assertiveness Gap | 3 | High "wow that's me" factor |
+| Task-People Management Friction | 2 | High-confidence match |
+| Speed-Safety Paradox | 2 | Insightful when detected |
+| Autonomy-Structure Contradiction | 2 | High value when present |
+| Growth-Repetition Conflict | 2 | Requires interpretation |
+
+### Detection Rules
+
+1. **Speed-Safety Paradox:** Q2=2 (Fast) + Q5=1 (High loss aversion)
+2. **Public-Private Assertiveness Gap:** Q1=2 (High assertiveness) + Q6=1 (Low reputational risk tolerance)
+3. **Task-People Management Friction:** Q3=2 (Task-focused) + Q7=D (Too much people mgmt drains)
+4. **Autonomy-Structure Contradiction:** Q7=A (Lack of autonomy drains) + Q8=E (Want structured environment)
+5. **Sunk Cost Trap:** Q4=1 (High sunk cost bias) + Q5=1 (High loss aversion)
+6. **Growth-Repetition Conflict:** Q7=C (Repetitive work drains) + Q8=A (Want deep technical/specialist)
+
+### Display Logic (Phase 0)
+
+**FREE (no email required):**
+- Show ONE tension (highest weight among detected tensions)
+- Full narrative with confidence tag
+
+**GATED (requires email):**
+- Show remaining 1-2 detected tensions (sorted by weight)
+- Full recommendations and red flags
 
 ---
 
@@ -136,6 +214,8 @@ Red flags to avoid:
 - Q6: 2 (Low reputational risk aversion)
 - Q7: A (Lack of autonomy drains me)
 - Q8: D (Want high autonomy/ownership)
+- Q9: A (IC)
+- Q10: C (6-10 years)
 
 **Result:**
 
@@ -144,12 +224,15 @@ Red flags to avoid:
 YOUR WIRING
 ═══════════════════════════════════════════════════════════
 
-You're fast, decisive, and task-focused.
+You're decisive and fast-moving, task-focused with high execution bias.
+
+Operating Velocity: VERY HIGH (6/6)
+Risk Posture: VERY HIGH (6/6)
 
 Decision patterns:
 • You cut losses fast—sunk cost doesn't trap you
 • You take calculated risks for higher upside
-• You're willing to take reputational risks when you have data
+• You're comfortable taking visible risks when you have data
 
 ═══════════════════════════════════════════════════════════
 THE MISMATCH
@@ -174,7 +257,9 @@ Given your wiring, look for:
 • Roles with "build it your way" mandates—outcome accountability, not process compliance
 • Managers who give you the problem and trust you to solve it (weekly check-ins, not daily status updates)
 
-You'll thrive when: Someone hands you a goal, a deadline, and gets out of your way.
+Risk-specific fit: With your high risk tolerance (6/6), you should favor roles with significant upside potential—equity, performance bonuses, commission structures. You can handle volatility that others avoid. Don't settle for purely fixed comp.
+
+You'll thrive when: Someone hands you a goal, a deadline, and gets out of your way. As an IC with 6-10 years of experience, you're past the point of needing direction—you need ownership.
 
 ═══════════════════════════════════════════════════════════
 NEXT STEP
@@ -189,6 +274,11 @@ Red flags to avoid:
 • "We have a clear process for everything"
 • Multiple sign-offs required for routine decisions
 • Manager describes themselves as "hands-on"
+
+Risk-aware red flags:
+• Purely fixed compensation (wastes your high risk tolerance—look for equity/bonus structures)
+• "We minimize risk at all costs" cultures (you thrive on calculated bets, not safety-first environments)
+• Large, bureaucratic orgs optimized for stability over growth
 ```
 
 ---
@@ -227,7 +317,7 @@ You're drained by: Unclear expectations or constantly shifting priorities
 
 This hits you hard because: You're wired to think deeply and systematically. You need to understand the full context before you can do your best work. But your environment keeps moving the goalposts.
 
-Your nervous system interprets this as: "I can't win. I'm solving the wrong problem."
+The signal you're getting: "I can't win. I'm solving the wrong problem."
 
 The real cost: You spend energy adapting to chaos instead of going deep. By the time you understand the problem, the requirements have changed. You never get to leverage your natural strength: thorough, high-quality thinking.
 
@@ -282,7 +372,7 @@ Red flags to avoid:
 YOUR WIRING
 ═══════════════════════════════════════════════════════════
 
-You're moderately assertive, steady-paced, and people-focused.
+You're facilitative, fast-moving, and people-focused.
 
 Decision patterns:
 • You balance speed with thoughtfulness
@@ -297,7 +387,7 @@ You're drained by: Too much solo work, not enough collaboration
 
 This hits you hard because: You're energized by people. You do your best thinking in conversation. You want to coach, align, build shared understanding. But your current role rewards individual output.
 
-Your nervous system interprets this as: "I'm isolated. My strengths don't matter here."
+What this actually means: You're isolated. Your natural advantage—helping others succeed—doesn't matter in a role that only measures individual output.
 
 The real cost: You're forcing yourself into deep solo work when your natural advantage is synthesis, alignment, and helping others do their best work. Every Zoom-off head-down day feels draining instead of energizing.
 
@@ -367,8 +457,6 @@ You're drained by: Repetitive work without learning/growth
 
 This hits you hard because: You're wired to think systemically. You see patterns, optimize processes, and spot inefficiencies. But your role has you executing the same playbook on repeat.
 
-Your nervous system interprets this as: "I'm capable of more. This is a waste."
-
 The real cost: You're spending mental energy on work that doesn't require your full cognitive capacity. You're solving the same problem 12 times instead of solving it once at the system level. You're an architect being asked to lay bricks.
 
 The quiet fear: "I'm getting good at something that doesn't matter."
@@ -403,6 +491,88 @@ Red flags to avoid:
 
 ---
 
+### Archetype 5: The Assertive Analyst (Mixed Profile)
+
+**Profile:**
+- Q1: 2 (High assertiveness - makes calls)
+- Q2: 1 (Slow/deliberate pace - needs 90%+ info)
+- Q3: 2 (Task-focused)
+- Q4: 2 (Low sunk cost bias - cuts bad projects)
+- Q5: 1 (High loss aversion - prefers certainty)
+- Q6: 2 (Low reputational risk - challenges assumptions)
+- Q7: B (Unclear expectations / shifting priorities)
+- Q8: B (Strategic thinking and planning)
+- Q9: B (Manager)
+- Q10: D (11-15 years)
+
+**Result:**
+
+```
+═══════════════════════════════════════════════════════════
+YOUR WIRING
+═══════════════════════════════════════════════════════════
+
+You're decisive but deliberate, task-focused with high standards.
+
+Operating Velocity: MODERATE (4/6) — balanced between speed and caution
+Risk Posture: MODERATE-HIGH (5/6) — takes calculated risks
+
+Decision patterns:
+• You're assertive—you'll make the call when it needs to be made
+• But you need high confidence first—you won't move at 80%
+• You cut bad projects quickly when the data is clear
+• You're willing to challenge assumptions publicly when logic supports it
+
+The internal tension: You want to lead decisively, but you need time to think first. Teams experience you as confident but cautious—willing to make tough calls, but only after thorough analysis.
+
+═══════════════════════════════════════════════════════════
+THE MISMATCH
+═══════════════════════════════════════════════════════════
+
+You're drained by: Unclear expectations or constantly shifting priorities
+
+This hits you hard because: You're wired to make high-quality decisions—but that requires stable goals and time to analyze. When priorities shift every two weeks, you can't operate at your best. You're stuck choosing between "decide fast with incomplete info" (uncomfortable) or "analyze thoroughly but miss the window" (frustrating).
+
+The signal you're getting: "By the time I understand the problem well enough to solve it correctly, we're solving a different problem."
+
+The real cost: As a manager with 11+ years of experience, you know how to make complex calls—but you need context stability to do it well. Your team sees you as indecisive, but the real issue is environmental chaos, not your wiring.
+
+═══════════════════════════════════════════════════════════
+WHERE YOU SHINE
+═══════════════════════════════════════════════════════════
+
+You want: Strategic thinking and planning
+
+Given your wiring, look for:
+• Management roles in mature orgs (Series C+) with quarterly planning cycles, not weekly pivots
+• Strategy roles where the job is "make the right call" not "make a fast call"
+• Companies that value decision quality over decision speed—where "we got it right" beats "we shipped fast"
+
+You'll thrive when: You have 2-3 weeks to analyze a strategic decision, then the authority to make the call and commit the team.
+
+Risk-specific fit: You're comfortable with calculated risks (Risk Posture: 5/6), so favor roles with performance upside, equity, or bonus structures—just ensure the success criteria are stable, not shifting.
+
+═══════════════════════════════════════════════════════════
+NEXT STEP
+═══════════════════════════════════════════════════════════
+
+Filter your next role for:
+1. **Planning cadence:** Ask: "How often do strategic priorities change?" (Target: quarterly, not weekly)
+2. **Decision authority:** Ask: "What decisions require my manager's approval vs my own judgment?"
+3. **Manager style:** Look for leaders who value "right answer" over "fast answer"
+
+Red flags to avoid:
+• "We pivot quickly based on market feedback" (chaos trigger)
+• "Fast-paced, rapidly changing environment" (contradicts your deliberate wiring)
+• Early-stage startups (pre-Series B)—too much volatility for your operating style
+
+Risk-aware red flags:
+• Purely fixed compensation with no upside (underutilizes your risk tolerance)
+• Roles with no performance-based rewards (you can handle variable comp)
+```
+
+---
+
 ## Mismatch Diagnosis Matrix
 
 Use this to map Q7 (drain) + wiring profile → diagnosis insight.
@@ -432,45 +602,89 @@ Use this to map Q8 (ideal role) + wiring → specific recommendations.
 | **Structured environment** | "Process-heavy scale-up (fast, but within systems)" | "Large enterprise (stable, deep processes)" | "Program manager in structured org" | "Operations role in mature company" |
 | **Fast-paced/dynamic** | "Startup or growth-stage company (natural fit)" | "Avoid. Mismatch." | "Agency/consulting (new people, new problems)" | "Early-stage startup IC (ship fast, iterate)" |
 
-*Note: "Mix of several" removed from Q8, so this matrix now covers 6 ideal role types.*
+
+---
+
+## Risk-Specific Modifiers (Tier 2 Addition)
+
+Add these to "WHERE YOU SHINE" section based on Risk Posture score:
+
+### High Risk (Score 5-6)
+
+**Add to recommendations:**
+- "Favor roles with performance upside—equity, variable comp, bonus structures"
+- "Look for environments with asymmetric return potential (early-stage, founder track, commission-based)"
+- "You can handle uncertainty—don't over-index on stability"
+
+**Add to red flags:**
+- "Purely fixed compensation with no upside (underutilizes your risk tolerance)"
+- "Highly bureaucratic environments optimized for safety over growth"
+- "Roles where 'don't make mistakes' is more important than 'create breakthroughs'"
+
+### Low Risk (Score 3-4)
+
+**Add to recommendations:**
+- "Favor predictable compensation (base salary over variable comp)"
+- "Look for stable roadmaps and clear success metrics"
+- "Prioritize environments where outcomes are controllable and measurable"
+
+**Add to red flags:**
+- "Heavy variable compensation (>30% of total comp at risk)"
+- "Undefined success metrics or outcomes dependent on factors outside your control"
+- "Roles with high reputational exposure (exec visibility, public-facing)"
 
 ---
 
 ## Usage Guide for Manual Scoring (Phase 0)
 
+**Implementation approach:** Use **fixed outputs** (route to closest matching archetype example). For Phase 0, write 5-6 pre-written examples covering common profiles. If you get >100 responses, consider dynamic generation.
+
 **Steps:**
-1. Score Q1-Q6 with binary values (1 or 2)
-   - Each question has 2 options
+
+1. **Score Q1-Q6** with binary values (1 or 2)
    - Option A typically scores 2 (high on dimension)
    - Option B typically scores 1 (low on dimension)
 
-2. Calculate axis scores:
+2. **Calculate axis scores:**
    - **Operating Velocity** = Q1 + Q2 + Q3 (range: 3-6)
    - **Risk Posture** = Q4 + Q5 + Q6 (range: 3-6)
 
-3. Map to archetype (see result-system-design.md):
-   - High Velocity (5-6) + High Risk (5-6) = **The Driver**
-   - Low Velocity (3-4) + High Risk (5-6) = **The Architect**
-   - High Velocity (5-6) + Low Risk (3-4) = **The Operator**
-   - Low Velocity (3-4) + Low Risk (3-4) = **The Evaluator**
+3. **Apply intensity bands** (use language modifiers from tables above):
+   - Velocity 6: "decisive and fast-moving"
+   - Velocity 5: "generally decisive"
+   - Velocity 4: "balanced between speed and caution"
+   - Velocity 3: "deliberate and consensus-oriented"
+   - (Same for Risk—see Risk Posture table)
 
-4. Check boundary handling:
+4. **Check boundary handling:**
    - If Velocity or Risk = 4 or 5, add "leaning" language
    - Example: Score 5 = "High (leaning toward very high)"
 
-5. Display scores with band labels (NOT /10 bars):
-   - 6: Very High
-   - 5: High or Moderate-High
-   - 4: Moderate
-   - 3: Low
+5. **Detect tensions** (see Tension Detection section):
+   - Check all 6 detection rules
+   - Assign weights (2 or 3)
+   - Sort by weight, take top 2-3
 
-6. Look up Q7 + wiring in Mismatch Matrix → diagnosis
-7. Look up Q8 + wiring in Environment Matrix → recommendations
-8. Fill in template with personalized language
+6. **Apply email gate logic:**
+   - FREE: Show archetype + scores + ONE tension (highest weight)
+   - GATED: Remaining 1-2 tensions + full recommendations
 
-**Time per result (manual):** 2-3 minutes once you're familiar with the matrices.
+7. **Look up mismatch:** Q7 + wiring in Mismatch Matrix → diagnosis
 
-**Reference:** See `/assessment/result-system-design.md` for complete archetype descriptions, tension detection rules, and result page structure.
+8. **Look up recommendations:** Q8 + wiring in Environment Matrix → base recommendations
+
+9. **Inject risk modifiers:** Add risk-specific recommendations and red flags based on Risk Posture (3-4 vs 5-6)
+
+10. **Add role context from Q9/Q10:**
+    - Q9=Manager + Q10=D → "As a manager with 11+ years..."
+    - Q9=IC + Q10=B → "As an IC with 3-5 years..."
+    - Use role context to make diagnosis feel specific
+
+11. **Route to closest archetype example** or fill template with personalized language
+
+**Time per result (manual):** 3-5 minutes once familiar with matrices.
+
+**Reference:** See `/assessment/result-system-design.md` for complete archetype descriptions and tension narratives.
 
 ---
 
