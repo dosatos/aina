@@ -44,7 +44,7 @@
 - E = Too much solo work
 - F = High stress without control
 - G = Lack of impact/meaning
-- H = None / not drained
+- H = Something else (please specify)
 
 **Q8: Ideal Role Emphasis** (categorical)
 - A = Deep technical/specialist
@@ -53,7 +53,8 @@
 - D = High autonomy/ownership
 - E = Structured environment
 - F = Fast-paced/dynamic
-- G = Mix of several
+
+*Note: "Mix of several" option removed - forces prioritization for better signal*
 
 **Q9: Role Type** (context)
 - A = IC
@@ -430,7 +431,8 @@ Use this to map Q8 (ideal role) + wiring → specific recommendations.
 | **High autonomy/ownership** | "Startup IC or founder (own entire problem)" | "Senior IC with defined domain (deep autonomy)" | "Product manager (own outcomes, work with people)" | "Technical founder or senior IC (own, execute)" |
 | **Structured environment** | "Process-heavy scale-up (fast, but within systems)" | "Large enterprise (stable, deep processes)" | "Program manager in structured org" | "Operations role in mature company" |
 | **Fast-paced/dynamic** | "Startup or growth-stage company (natural fit)" | "Avoid. Mismatch." | "Agency/consulting (new people, new problems)" | "Early-stage startup IC (ship fast, iterate)" |
-| **Mix of several** | "Product manager or generalist IC" | "Senior IC at mid-size company" | "Cross-functional role" | "Technical product manager" |
+
+*Note: "Mix of several" removed from Q8, so this matrix now covers 6 ideal role types.*
 
 ---
 
@@ -441,19 +443,34 @@ Use this to map Q8 (ideal role) + wiring → specific recommendations.
    - Each question has 2 options
    - Option A typically scores 2 (high on dimension)
    - Option B typically scores 1 (low on dimension)
-2. Map behavioral wiring:
-   - Assertiveness = Q1 (2 = high, 1 = low)
-   - Pace = Q2 (2 = fast, 1 = slow)
-   - Task/People = Q3 (2 = task-focused, 1 = people-focused)
-3. Map decision patterns:
-   - Sunk cost = Q4 (2 = low bias, 1 = high bias)
-   - Loss aversion = Q5 (2 = low aversion, 1 = high aversion)
-   - Reputational risk = Q6 (2 = low aversion, 1 = high aversion)
-4. Look up Q7 + wiring in Mismatch Matrix → diagnosis
-5. Look up Q8 + wiring in Environment Matrix → recommendations
-6. Fill in template with personalized language
 
-**Time per result (manual):** 2-3 minutes once you're familiar with the matrices (faster with binary scoring).
+2. Calculate axis scores:
+   - **Operating Velocity** = Q1 + Q2 + Q3 (range: 3-6)
+   - **Risk Posture** = Q4 + Q5 + Q6 (range: 3-6)
+
+3. Map to archetype (see result-system-design.md):
+   - High Velocity (5-6) + High Risk (5-6) = **The Driver**
+   - Low Velocity (3-4) + High Risk (5-6) = **The Architect**
+   - High Velocity (5-6) + Low Risk (3-4) = **The Operator**
+   - Low Velocity (3-4) + Low Risk (3-4) = **The Evaluator**
+
+4. Check boundary handling:
+   - If Velocity or Risk = 4 or 5, add "leaning" language
+   - Example: Score 5 = "High (leaning toward very high)"
+
+5. Display scores with band labels (NOT /10 bars):
+   - 6: Very High
+   - 5: High or Moderate-High
+   - 4: Moderate
+   - 3: Low
+
+6. Look up Q7 + wiring in Mismatch Matrix → diagnosis
+7. Look up Q8 + wiring in Environment Matrix → recommendations
+8. Fill in template with personalized language
+
+**Time per result (manual):** 2-3 minutes once you're familiar with the matrices.
+
+**Reference:** See `/assessment/result-system-design.md` for complete archetype descriptions, tension detection rules, and result page structure.
 
 ---
 
